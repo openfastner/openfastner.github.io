@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>交通アクセス - 福岡小児科クリニック</title>
+<meta name="viewport" content="width=device-width">
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- jQuery.jsの読み込み -->
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<!--jQueryの読み込み(ページ内のスムーズスクロール)-->
+<script src="js/s_scroll.js"></script>
+<script src="js/s_scroll2"></script>
+<!-- トップページにスライドショー表示(背景画像をリピート) -->
+<script src="js/jquery.bgswitcher.js"></script>
+<script src="js/jquery.bgswitcher2.js"></script>
+
+	<!-- ↓↓<nav id="menu">の表示・非表示を切り替えるように指定するjquery ↓↓ -->
+	<script>
+	$(function(){
+		$("#menubtn").click(function(){
+			$("#menu").slideToggle();
+		});
+	});
+	</script>
+</head>
+<body id="top">
+	<div class="header">
+		<div class="header-inner">
+			<div class="box1">
+					<div class="site">
+						<h1><a href="home.html"><i class="fa fa-hospital-o"></i>福岡小児科クリニック</a></h1>
+					</div>
+			</div>
+<!-- 画面縮小時メニューボタン表示 -->
+		<div class="box2">
+					<button type="button" id="menubtn">
+						<i class="fa fa-bars"></i><span>MENU</span>
+					</button>
+				<!-- ナビゲーション -->
+				<nav class="menu" id="menu">
+					<ul>
+						<li><a href="home.html">ホーム</a></li>
+						<li><a href="info.html">診療案内</a></li>
+						<li><a href="contact.html">お問い合わせ</a></li>
+						<li><a href="access.html">交通アクセス</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!-- キャッチコピーをヘッダー画像の上に表示 -->
+	<div class="box3">
+		<div class="top">
+			<p class="catch">最新の情報・最善の医療を大切なお子様にお届けします</p>
+		</div>
+	</div>
+<div id="2clum">
+<!-- 交通アクセスに関する記事（left clum）-->
+<article class="box9">
+	<div class="subtitle">
+		<h1>交通アクセス</h1>
+	</div>
+		<div class="box9-1">
+				<h2><i class="fa fa-hospital-o"></i>福岡小児科クリニック</h2>
+					<p><strong><i class="fa fa-building-o"></i>address</strong>〒810-0001 福岡県福岡市中央区天神1丁目4-1&nbsp;西日本新聞会館16階</p>
+					<p><strong><i class="fa fa-phone-square"></i>TEL</strong> 092-739-3200</p>
+					<ul>
+						<li><i class="fa fa-train"></i>電車でお越しの方</li>
+						<P>福岡市営地下鉄空港線および西鉄天神駅より徒歩2分</P>
+						<li><i class="fa fa-bus"></i>バスでお越しの方</li>
+						<p>西鉄バス「福岡天神大丸前」すぐ</p>
+						<li><i class="fa fa-car"></i>お車でお越しの方</li>
+						<p>駐車場はございませんのでお近くのパーキングをご利用ください(有料)</p>
+					</ul>
+		</div>
+	<div class="box9-2">
+		<img src="img/mapi3.png" height="300" width="400">
+	</div>
+		<div class="box9-3">
+			<!-- googlemap表示(架空の病院のため仮の住所を表示)-->
+			<p><i class="fa fa-map-marker"></i>Google mapで表示</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d53172.04151032669!2d130.38725!3d33.59875!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35419190236c8f81%3A0x4761820d4d29a340!2z6KW_5pel5pys5paw6IGe44OR44K944Kz44Oz5pWZ5a6kKOemj-WyoeODu-Wkqeelnik!5e0!3m2!1sja!2sjp!4v1435195255416" width="1150" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+</article>
+				<!--トップに戻るボタン-->
+	<div class="pagetop">
+		<a href="#top"><img src="img/toppage1.png"></a>
+	</div>
+<div class="footer">
+	<div class="footer-inner">
+		<div class="copyright">
+			<p>Copyright &copy; 福岡小児科クリニック</p>
+			<p>〒810-0001 福岡県福岡市中央区天神１丁目４−１&nbsp;西日本新聞会館16階&nbsp;TEL 092-739-3200</p>
+		</div>
+	</div>
+</div>
+	</body>
+</html>
