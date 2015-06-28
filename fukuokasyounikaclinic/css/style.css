@@ -319,12 +319,13 @@ body	{
 }
 /*footerをバーの形にする*/
 .footer {
+	border-top: solid 1px #ddd;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	background-color: #ddd;
 }
 /*ボックスの左右*/
-.header, .box3,.box4, .box5, .box6, .box7, .box8, .box9 {
+.header, .box3,.box4, .box5, .box6, .box7, .box8, .box9, .footer {
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -352,6 +353,23 @@ body	{
 	padding-top: 25px;
 	padding-bottom: 25px;
 }
+.box7 h1 {
+	padding-bottom: 10px;
+}
+.box8 {
+	padding-top: 25px;
+}
+.box8 h1 {
+	padding-bottom: 10px;
+}
+.box9 {
+	padding-top: 25px;
+}
+.box9 h1 {
+	padding-bottom: 10px;
+}
+}
+
 /*お問い合わせページ*/
 article {
 	margin-left: 45px;
@@ -385,20 +403,53 @@ article h1 {
 .box8 i {
 	margin-right: 10px;
 }
-.box8-2 figure {
-	border-radius: 5px;
-	border: solid 1px #aaa;
-	background-color: #aaa;
+
+.box8-2 {
+	margin-top: 30px;
 }
-.box8-2 figcaption {
-	color: #666;
-	margin-left: 60px;
-	margin-bottom: 20px;
+.box8-2 ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.box8-2 li {
+	display: block;
+	padding: 0;
+	color: #888;
+	text-decoration: none;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+.box8-2 li:hover {
+	background-color: #eee;
+	opacity: 0.8;
 }
 .box8-2 img {
-	margin-right: 10px;
-	margin-left: 7px;
+	width: 100%;
+	height: auto;
+	border: none;
+	vertical-align: bottom;
 	border-radius: 5px;
+}
+.box8-2 .text {
+	padding: 10px 10px;
+	background-color: rgba(0,0,0,0.3);
+	color: #fff;
+	border-radius: 5px;
+	text-align: center;
+}
+/*画像と文字を重ねる設定*/
+.box8-2 li {
+	position: relative;
+}
+.box8-2 .text {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 input[type="text"] {
 	display: block;
@@ -498,10 +549,51 @@ table p {
 .box7-1 {
 	margin-top: 10px;
 }
-/*交通アクセスのページ*/
-.box9 {
-	background-color: #ffe6cc;
+.box7-2 ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
+.box7-2 li {
+	display: block;
+	padding: 0;
+	color: #888;
+	text-decoration: none;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+.box7-2 li:hover {
+	background-color: #eee;
+	opacity: 0.8;
+}
+.box7-2 img {
+	width: 100%;
+	height: auto;
+	border: none;
+	vertical-align: bottom;
+	border-radius: 5px;
+}
+.box7-2 .text {
+	padding: 10px 10px;
+	background-color: rgba(0,0,0,0.2);
+	color: #fff;
+	border-radius: 5px;
+	text-align: center;
+}
+/*画像と文字を重ねる設定*/
+.box7-2 li {
+	position: relative;
+}
+.box7-2 .text {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*交通アクセスのページ*/
 
 .box9-1 h2 i {
 	padding-right: 10px;
@@ -548,7 +640,7 @@ table p {
 /* ########### 359px以下 ########### */
 @media (max-width: 359px) {
 /* サイト名 */
-.site img	{
+.top {
 	width: 225px;
 	height: auto;
 }
@@ -560,6 +652,7 @@ table p {
 	padding: 10px 7px;
 	font-size: 11px;
 }
+
 /*キャッチコピー*/
 .catch {
 	padding: 5px 10px;
@@ -615,13 +708,16 @@ table p {
 .menu li a {
 	display: block;
 	padding: 5px;
-	color: #000;
+	color: #666;
 	font-size: 14px;
 	text-decoration: none;
 }
 .menu li a:hover {
-	background-image: url(img/clover6.jpg);
-	background-repeat: no-repeat;
+		color: pink;
+		opacity: 0.8;
+}
+.footer {
+	padding-left: 20px;
 }
 }
 
@@ -631,7 +727,7 @@ table p {
 #menubtn {
 	display: none;
 }
-	/*ナビゲーション*/
+	/*ナビゲーション(横並び)*/
 #menu {
 		display: block !important;
 }
@@ -640,16 +736,22 @@ table p {
 	padding: 0;
 	list-style: none;
 }
+.menu ul li {
+	border-right: 1.5px solid #aaa;
+}
+.menu ul li:first-child {
+	border-left: 1.5px solid #aaa;
+}
 .menu li a {
 	display: block;
 	padding: 10px 15px;
 	color: #888;
-	font-size: 14px;
+	font-size: 16px;
 	text-decoration: none;
 }
 .menu li a:hover {
-	background-image: url(img/clover6.jpg);
-	background-repeat: no-repeat;
+		color: pink;
+		opacity: 0.8;
 }
 .menu ul:after {
 	content: "";
@@ -757,7 +859,7 @@ table p {
 /*1190px以上*/
 @media (min-width: 1190px) {
 /*全体の横幅を固定*/
-.box3, .box4, .header-inner, .box5-inner, .box7, .box8, .box9, .footer {
+.box3, .box4, .header-inner, .box5, .box5-inner, .box7, .box8, .box9, .footer {
 	width: 1140px;
 	margin-left: auto;
 	margin-right: auto;
@@ -768,9 +870,14 @@ table p {
 	border-bottom: solid 1px #ddd;
 }
 /*footerの上に罫線を挿入*/
+.footer-inner {
+	padding: 30px;
+	padding-left: 350px;
+}
 .footer {
 	width: 100%;
 	border-top: solid 1px #ddd;
-	padding: 30px;
+/*	padding: 30px;
+	padding-left: 50px;*/
 }
 }
